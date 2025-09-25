@@ -1,12 +1,12 @@
 
-package com.mycompany.venda_sorvete_n1;
+package com.mycompany.venda_sorvete_n1.joseMauro;
 
 /**
  *
  * @author José Mauro
  */
 public class Produto {
-    private  int id;
+    private int id;
     private String nome;
     private double preco;
     private int qtdEstoque;
@@ -49,6 +49,4 @@ public class Produto {
     public void setQtdEstoque(int qtdEstoque) {
         this.qtdEstoque = qtdEstoque;
     }
-    
-    
 }
