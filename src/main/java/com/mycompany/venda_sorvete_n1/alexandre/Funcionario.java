@@ -62,10 +62,12 @@ public class Funcionario {
         this.salario = salario;
     }
 
-    public void aumentarSalario(double percentual) {
+    public double aumentarSalario(double percentual) {
         if (percentual > 0) {
-            this.salario += this.salario * (percentual / 100);
+            double aumento = (this.salario * percentual) / 100;
+            this.salario += aumento;
         }
+        return this.salario;
     }
 
 }

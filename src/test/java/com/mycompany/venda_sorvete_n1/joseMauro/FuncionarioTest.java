@@ -30,17 +30,17 @@ public class FuncionarioTest {
     public void testarAumentarSalario() {
         System.out.println("Testar Aumentar Salário");
 
-        double aumentoAlexandre = 300.00; // 10% de 3000.00
-        double aumentoJoseMauro = 150.00; // 10% de 1500.00
-        double aumentoMariaClara = 150.00; // 10% de 1500.00
+        double aumentoAlexandre = 10;
+        double aumentoJoseMauro = 20;
+        double aumentoMariaClara = 25;
 
-        double novoSalarioAlexandre = alexandre.getSalario() + aumentoAlexandre;
-        double novoSalarioJoseMauro = joseMauro.getSalario() + aumentoJoseMauro;
-        double novoSalarioMariaClara = mariaClara.getSalario() + aumentoMariaClara;
+        double novoSalarioAlexandre = alexandre.aumentarSalario(aumentoAlexandre);
+        double novoSalarioJoseMauro = joseMauro.aumentarSalario(aumentoJoseMauro);
+        double novoSalarioMariaClara = mariaClara.aumentarSalario(aumentoMariaClara);
 
         assert novoSalarioAlexandre == 3300.00 : "Salário do Alexandre incorreto";
-        assert novoSalarioJoseMauro == 1650.00 : "Salário do José Mauro incorreto";
-        assert novoSalarioMariaClara == 1650.00 : "Salário da Maria Clara incorreto";
+        assert novoSalarioJoseMauro == 1800.00 : "Salário do José Mauro incorreto";
+        assert novoSalarioMariaClara == 1875.00 : "Salário da Maria Clara incorreto";
     }
 
 }

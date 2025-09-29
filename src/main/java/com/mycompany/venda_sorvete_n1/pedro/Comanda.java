@@ -17,7 +17,7 @@ public class Comanda {
     private Integer idComanda;
     private LocalDateTime data_abertura;
     private LocalDateTime data_fechamento;
-    private String status; // "Aberta", "Fechada", "Cancelada"
+    private String status;
     private Cliente cliente;
     private Funcionario funcionario;
     private List<ItemComanda> itens;
@@ -26,7 +26,7 @@ public class Comanda {
         this.cliente = cliente;
         this.funcionario = funcionario;
         this.itens = new ArrayList<>();
-        this.status = "Fechada"; // Inicialmente fechada
+        this.status = "Fechada";
     }
 
     public Integer getIdComanda() {
