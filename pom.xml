@@ -30,4 +30,5 @@
         <maven.compiler.release>24</maven.compiler.release>
         <exec.mainClass>com.mycompany.venda_sorvete_n1.Venda_sorvete_n1</exec.mainClass>
     </properties>
+    <name>venda_sorvete_n1-pedro</name>
 </project>
