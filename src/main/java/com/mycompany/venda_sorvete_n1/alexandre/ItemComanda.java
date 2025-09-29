@@ -7,7 +7,7 @@ import com.mycompany.venda_sorvete_n1.joseMauro.Produto;
  * @author Alexandre
  */
 public class ItemComanda {
-    
+
     private Produto produto;
     private int quantidade;
     private double precoUnitario;
@@ -29,5 +29,5 @@ public class ItemComanda {
     public int getQuantidade() {
         return quantidade;
     }
-    
+
 }

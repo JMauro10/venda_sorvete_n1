@@ -7,17 +7,19 @@ import java.time.LocalDate;
  * @author Alexandre
  */
 public class Funcionario {
-    
-    private String nome; 
-    private String cpf; 
-    private String cargo; 
-    private LocalDate data_admissao;
 
-    public Funcionario(String nome, String cpf, String cargo, LocalDate data_admissao) {
+    private String nome;
+    private String cpf;
+    private String cargo;
+    private LocalDate data_admissao;
+    private double salario;
+
+    public Funcionario(String nome, String cpf, String cargo, LocalDate data_admissao, double salario) {
         this.nome = nome;
         this.cpf = cpf;
         this.cargo = cargo;
         this.data_admissao = data_admissao;
+        this.salario = salario;
     }
 
     public String getNome() {
@@ -50,6 +52,20 @@ public class Funcionario {
 
     public void setData_admissao(LocalDate data_admissao) {
         this.data_admissao = data_admissao;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    public void aumentarSalario(double percentual) {
+        if (percentual > 0) {
+            this.salario += this.salario * (percentual / 100);
+        }
     }
 
 }

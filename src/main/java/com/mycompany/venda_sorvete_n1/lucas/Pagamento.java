@@ -25,7 +25,10 @@ public class Pagamento {
         this.totalBruto = moeda(totalBruto);
     }
 
-    public Pagamento metodo(MetodoPagamento m) { this.metodo = m; return this; }
+    public Pagamento metodo(MetodoPagamento m) {
+        this.metodo = m;
+        return this;
+    }
 
     public Pagamento taxaCartaoPercentual(BigDecimal p) {
         if (p == null || p.signum() < 0 || p.compareTo(BigDecimal.valueOf(10)) > 0)
@@ -69,19 +72,37 @@ public class Pagamento {
         return moeda(total);
     }
 
-    private BigDecimal moeda(BigDecimal v) { return v.setScale(2, RoundingMode.HALF_UP); }
+    private BigDecimal moeda(BigDecimal v) {
+        return v.setScale(2, RoundingMode.HALF_UP);
+    }
 
     public String resumo() {
         return String.format(
-            "metodo=%s,status=%s,totalBruto=%.2f,taxaCartao=%.2f%%,totalLiquido=%.2f,valorPago=%.2f,troco=%.2f,criadoEm=%s",
-            metodo, status, totalBruto, taxaCartaoPercentual, totalLiquido(), valorPago, troco, criadoEm
-        );
+                "metodo=%s,status=%s,totalBruto=%.2f,taxaCartao=%.2f%%,totalLiquido=%.2f,valorPago=%.2f,troco=%.2f,criadoEm=%s",
+                metodo, status, totalBruto, taxaCartaoPercentual, totalLiquido(), valorPago, troco, criadoEm);
     }
 
-    public BigDecimal getTotalBruto() { return totalBruto; }
-    public BigDecimal getTaxaCartaoPercentual() { return taxaCartaoPercentual; }
-    public MetodoPagamento getMetodo() { return metodo; }
-    public StatusPagamento getStatus() { return status; }
-    public BigDecimal getValorPago() { return valorPago; }
-    public BigDecimal getTroco() { return troco; }
+    public BigDecimal getTotalBruto() {
+        return totalBruto;
+    }
+
+    public BigDecimal getTaxaCartaoPercentual() {
+        return taxaCartaoPercentual;
+    }
+
+    public MetodoPagamento getMetodo() {
+        return metodo;
+    }
+
+    public StatusPagamento getStatus() {
+        return status;
+    }
+
+    public BigDecimal getValorPago() {
+        return valorPago;
+    }
+
+    public BigDecimal getTroco() {
+        return troco;
+    }
 }
