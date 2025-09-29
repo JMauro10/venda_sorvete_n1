@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.venda_sorvete_n1.pedro;
 
 import com.mycompany.venda_sorvete_n1.alexandre.Cliente;
@@ -21,7 +17,7 @@ public class Comanda {
     private Integer idComanda;
     private LocalDateTime data_abertura;
     private LocalDateTime data_fechamento;
-    private String status; // "Aberta", "Fechada", "Cancelada"
+    private String status;
     private Cliente cliente;
     private Funcionario funcionario;
     private List<ItemComanda> itens;
@@ -30,7 +26,59 @@ public class Comanda {
         this.cliente = cliente;
         this.funcionario = funcionario;
         this.itens = new ArrayList<>();
-        this.status = "Fechada"; // Inicialmente fechada
+        this.status = "Fechada";
+    }
+
+    public Integer getIdComanda() {
+        return idComanda;
+    }
+
+    public void setIdComanda(Integer idComanda) {
+        this.idComanda = idComanda;
+    }
+
+    public LocalDateTime getData_abertura() {
+        return data_abertura;
+    }
+
+    public void setData_abertura(LocalDateTime data_abertura) {
+        this.data_abertura = data_abertura;
+    }
+
+    public LocalDateTime getData_fechamento() {
+        return data_fechamento;
+    }
+
+    public void setData_fechamento(LocalDateTime data_fechamento) {
+        this.data_fechamento = data_fechamento;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public Funcionario getFuncionario() {
+        return funcionario;
+    }
+
+    public void setFuncionario(Funcionario funcionario) {
+        this.funcionario = funcionario;
+    }
+
+    public void setItens(List<ItemComanda> itens) {
+        this.itens = itens;
     }
 
     public void abrirComanda() {

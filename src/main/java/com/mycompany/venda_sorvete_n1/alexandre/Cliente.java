@@ -7,10 +7,10 @@ import java.time.LocalDate;
  * @author Alexandre
  */
 public class Cliente {
-    
-    private String nome; 
-    private String cpf; 
-    private String telefone; 
+
+    private String nome;
+    private String cpf;
+    private String telefone;
     private LocalDate data_cadastro;
 
     public Cliente(String nome, String cpf, String telefone, LocalDate data_cadastro) {
@@ -51,5 +51,5 @@ public class Cliente {
     public void setData_cadastro(LocalDate data_cadastro) {
         this.data_cadastro = data_cadastro;
     }
-    
+
 }

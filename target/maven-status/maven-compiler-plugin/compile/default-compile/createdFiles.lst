@@ -1,6 +1,11 @@
-com\mycompany\venda_sorvete_n1\pedro\Fornecedor.class
+com\mycompany\venda_sorvete_n1\alexandre\Cliente.class
 com\mycompany\venda_sorvete_n1\pedro\Comanda.class
 com\mycompany\venda_sorvete_n1\alexandre\Funcionario.class
+com\mycompany\venda_sorvete_n1\lucas\MetodoPagamento.class
+com\mycompany\venda_sorvete_n1\lucas\StatusPagamento.class
+com\mycompany\venda_sorvete_n1\alexandre\ItemComanda.class
+com\mycompany\venda_sorvete_n1\lucas\PagamentoBuilder.class
+com\mycompany\venda_sorvete_n1\alexandre\Fornecedor.class
 com\mycompany\venda_sorvete_n1\lucas\Pagamento.class
 com\mycompany\venda_sorvete_n1\joseMauro\Estoque.class
 com\mycompany\venda_sorvete_n1\joseMauro\Produto.class
